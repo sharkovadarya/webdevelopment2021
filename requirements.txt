@@ -3,3 +3,6 @@ fastapi==0.68.1
 pydantic==1.8.2
 starlette==0.14.2
 typing-extensions==3.10.0.2
+
+pytest~=6.2.5
+inflection~=0.5.1
