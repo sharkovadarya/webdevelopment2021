@@ -14,8 +14,6 @@ def find_recordings_by_show_title_and_production(title, production):
     if title not in shows:
         return []
     title = shows[title]
-    print(production)
-    print(productions)
     if production not in productions:
         return []
     production = productions[production]

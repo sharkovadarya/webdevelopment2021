@@ -6,3 +6,4 @@ typing-extensions==3.10.0.2
 
 pytest~=6.2.5
 inflection~=0.5.1
+ariadne~=0.13.0
