@@ -56,6 +56,27 @@
  - Запуск юнит-тестов: `pytest test/unit`
  - Запуск интеграционных тестов: `pytest test/integration`
 
+## GraphQL
+
+Сервис доступен по адресу `/graphql/`.
+
+Пример запроса:
+
+```
+{
+  recordings(title: "elisabeth", production: "original_vienna") {
+    id
+    cast 
+    type {
+      recording
+      authorship
+    }
+  }
+}
+```
+
+`recordings` требует аргумент `title`, опционально принимает аргумент `production` (как и в `GET /recording/`).
+
 ## Как это должно быть сделано
 
 Более полное, но пока не реализованное (в случае, если идею зарубят и попросят искать что-то другое) описание.
