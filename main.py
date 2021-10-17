@@ -2,13 +2,14 @@ from ariadne import QueryType, make_executable_schema, ObjectType
 from ariadne.asgi import GraphQL
 from fastapi import FastAPI
 
-from routers import recordings
+from routers import recordings, masters
 from routers.retrieval import find_recordings_by_show_title, find_recordings_by_show_title_and_production
 from util.data import load_recordings_from_json, clear_recordings
 
 app = FastAPI()
 
 app.include_router(recordings.router)
+app.include_router(masters.router)
 
 json_path = 'data.json'
 
